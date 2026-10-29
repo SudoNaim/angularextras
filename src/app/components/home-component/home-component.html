@@ -1,0 +1,9 @@
+<h1>Bienvenido a la aplicación para enviar archivos</h1>
+<h3 style="color: blue">{{mensaje}}</h3>
+
+<form #formArchivo="ngForm">
+    <label>Selecciona una imagen:</label>
+    <input type="file" #cajafile class="form-control" />
+    <br />
+    <button class="btn btn-success" (click)="subirArchivo()">Subir Archivo</button>
+</form>
